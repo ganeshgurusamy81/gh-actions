@@ -1,0 +1,13 @@
+name: sampletest1
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on:
+      - ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3.5.0
+    - name: run command
+      shell: bash
+      run: echo "Hello"
